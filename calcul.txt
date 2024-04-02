@@ -1,0 +1,26 @@
+Question 10
+
+n-1 
+ ∑  𝑎𝑠𝑐𝑖𝑖(𝑐𝑖)
+i=0
+
+h1("ABC")
+
+ascii("A") = 65
+ascii("B") = 66
+ascii("C") = 67
+
+somme = 0 
+string = "ABC"
+n = len(string)
+for i in range(n-1):
+    somme+=ord(string[i])
+
+la boucle donne 65 + 66 + 67 = 198
+
+Renvoie un indice out of range (198) il faut donc faire modulo soit 198 modulo M (M = longueur de la chaine)
+
+Elle n'est pas optimale car il peut y avoir des collisions entre les éléments.
+
+Question 11
+
